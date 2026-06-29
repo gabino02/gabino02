@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4fdf4;
+    color:#333;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+header{
+    background:linear-gradient(135deg,#2e7d32,#66bb6a);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.3rem;
+}
+
+.autor{
+    text-align:center;
+    padding:40px 0;
+}
+
+.card{
+    background:white;
+    margin:25px auto;
+    padding:40px;
+    width:90%;
+    max-width:1100px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+ul{
+    margin:20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin:25px 0;
+}
+
+.box{
+    background:#e8f5e9;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.destaque{
+    border-left:8px solid #4caf50;
+}
+
+.mensagem{
+    text-align:center;
+    padding:60px 20px;
+}
+
+blockquote{
+    font-size:1.5rem;
+    color:#2e7d32;
+    font-style:italic;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+#topo{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#81c784;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#topo:hover{
+    background:white;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .card{
+        padding:25px;
+    }
+}
